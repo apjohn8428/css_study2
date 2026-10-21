@@ -27,3 +27,12 @@ span.new {
     top: 10px;
     right: 10px;
 }
+div.top-button {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    width: 50px;
+    position: fixed; /* 그 위치에 고정 */
+    right: 20px;
+    bottom: 20px;
+}
