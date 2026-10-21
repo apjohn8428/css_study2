@@ -1,0 +1,13 @@
+div.products {
+    display: flex;
+    /* flex-wrap: nowrap; 기본값 -> 요소가 많아져도 다음 줄로 넘어가지 않음 */
+    flex-wrap: wrap; /* 자식 요소가 많아지면 다음 줄로 넘어감 */
+    gap: 10px;
+}
+
+div.product {
+    background-color: lightblue;
+    width: 150px;
+    padding: 20px;
+    box-sizing: border-box; /* 지정한 픽셀값에 맞춤 -> padding에 상관없이 가로길이 고정 */
+}

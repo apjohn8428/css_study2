@@ -1,0 +1,22 @@
+div.container {
+    display: flex;
+    gap: 10px;
+}
+
+div.item1 {
+    flex: 1; /* 부모 요소의 공간을 공통 비율로 나눠 가짐 */
+    background-color: coral;
+    padding: 20px;
+}
+
+div.item2 {
+    flex: 2; /* 부모 요소의 공간을 공통 비율로 나눠 가짐 */
+    background-color: coral;
+    padding: 20px;
+}
+
+div.item3 {
+    flex: 3; /* 부모 요소의 공간을 공통 비율로 나눠 가짐 */
+    background-color: coral;
+    padding: 20px;
+}

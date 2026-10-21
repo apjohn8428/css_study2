@@ -1,0 +1,19 @@
+div.container { /* 부모 태그 */
+    display: flex; /* 자식 요소들을 가로로 정렬 */
+    flex-direction: row; /* 정렬 방향을 결정 -> row(가로)는 기본값 */
+    gap: 10px; /* 방향과 관계 없이 자식 요소들 간의 간격 조절 */
+    /* justify-content: flex-start;  기본값 -> 가로배치는 왼쪽, 세로배치는 위쪽 정렬 */
+    /* justify-content: flex-end; 기본값과 반대 */
+    /* justify-content: space-between; 균등 정렬 */
+    /* justify-content: space-around; 가장자리를 제외한 공간을 균등 배분 */
+    justify-content: space-evenly; /* 모든 공간을 균등 배분 */
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+div.item { /* 자식 태그 */
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}

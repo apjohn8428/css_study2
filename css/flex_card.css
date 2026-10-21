@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+} /* padding이 입력되어도 지정된 너비를 유지 */
+
+div.productlist {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 40%;
+}
+
+div.good {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+}
+
+div.imagebox {
+    width: 100%;
+    height: 400px;
+}
+
+div.imagebox img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    object-fit: contain; /* 이미지가 잘리는 현상 방지 */
+    aspect-ratio: 1 / 1.2; /* 이미지의 가로-세로 비율 */
+}
+
+p.product-name {
+    font-size: 15px;
+} /* 상품 이름 */
+
+div.price {
+    font-size: 20px;
+    font-weight: bold;
+} /* 상품 가격 */
+
+a.buy-button {
+    display: block; /* width 속성을 적용하기 위한 변경 */
+    background-color: rgb(63, 63, 236);
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+a.buy-button:hover {
+    background-color: rgb(5, 5, 143);
+}
