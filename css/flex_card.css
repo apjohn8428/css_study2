@@ -58,3 +58,9 @@ a.buy-button {
 a.buy-button:hover {
     background-color: rgb(5, 5, 143);
 }
+
+@media screen and (max-width:600px) {
+    div.productlist {
+        flex-direction: column;
+    }
+}
