@@ -1,0 +1,32 @@
+div.productlist {
+    text-align: center;
+}
+
+div.product {
+    display: inline-block;
+    width: 20%;
+    margin: 1%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+div.product img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 900px) {
+    div.product {
+        width: 40%;
+        margin: 1%;
+    }
+} /* 태블릿 화면용 */
+
+@media screen and (max-width: 500px) {
+    div.product {
+        width: 100%;
+        margin: 10px 0;
+    }
+} /* 스마트폰 화면용 */
