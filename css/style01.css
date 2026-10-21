@@ -1,0 +1,29 @@
+div {
+    width: 150px;
+    padding: 15px;
+    margin: 5px;
+    background-color: lightblue;
+}
+
+div.box2 {
+    border: 1px solid red;
+    position: relative; /* 원 위치를 기준으로 이동 */
+    left: 30px; /* 왼쪽에 30px 여백 -> 오른쪽으로 이동 */
+    top: 10px; /* 위에 10px 여백 -> 아래로 이동 */
+}
+
+div.card {
+    width: 250px;
+    height: 150px;
+    background-color: pink;
+    position: relative;
+}
+
+span.new {
+  /* background-color: red;
+    color: white;
+    padding: 5px; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
