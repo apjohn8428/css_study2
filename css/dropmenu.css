@@ -1,0 +1,28 @@
+div.menu {
+    position: relative;
+    background-color: black;
+    display: inline-block;
+    color: white;
+    padding: 15px 25px;
+}
+
+div.submenu {
+    position: absolute;
+    left: 0px;
+    top: 100%; /* 부모 테두리의 맨 아래쪽으로 맞춤 */
+    width: 160px;
+    background-color: white;
+    border: 1px solid #ddd;
+    display: none; 
+}
+
+div.menu:hover div.submenu {
+    display: block;
+}
+
+div.submenu a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #000;
+}
