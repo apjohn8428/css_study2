@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "맑은 고딕";
+    color: #333;
+    margin: 0;
+}
+
+/* 헤더 디자인 */
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+header.header div.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header.header div.usermenu {
+    display: flex;
+    gap: 20px;
+}
+
+/* 상단 네비게이션 디자인 */
+nav.nav {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    background-color: #e9e8e8;
+}
+
+.nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+/* 메인 배너 */
+section.banner {
+    margin: 25px 10px 25px 10px;
+    background-color: #e9e8e8;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+div.layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 10px;
+}
+
+/* 왼쪽 메뉴 */
+aside.sidebar {
+    width: 150px;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sidebar a:hover {
+    font-weight: bold;
+    color: rgb(4, 4, 190);
+}
+
+/* 오른쪽 메뉴 */
+main.maincontent {
+    flex: 1; /* 왼쪽 메뉴 옆에 남은 공간을 본문 영역이 차지 */
+}
+
+div.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 상품 목록 */
+div.products {
+    display: flex;
+    flex-wrap: wrap; /* 상품 목록을 가로로 나열할 때 공간 부족 시 다음 줄로 자동 줄바꿈 */
+    gap: 20px;
+}
+
+div.product {
+    width: 40%; /* 한 줄에 넣을 상품 카드를 결정 */
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* 상품 이미지 */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+p.price {
+    font-size: 15px;
+}
+
+footer.footer {
+    background-color: #333;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+/* 모바일 화면에서 왼쪽 메뉴를 위로 이동 */
+@media screen and (max-width:600px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .sidebar h3 {
+        width: 100%;
+    }
+}
